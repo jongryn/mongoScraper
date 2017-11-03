@@ -82,7 +82,7 @@ app.get("/saved", function(req, res) {
         var hbsObject = {
             article: articles
         };
-        res.redner("saved", hbsObject);
+        res.render("saved", hbsObject);
     });
 });
 
