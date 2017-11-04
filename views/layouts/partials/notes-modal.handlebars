@@ -1,16 +1,16 @@
-<!-- Notes Modal -->
+<!--Notes Modal-->
 
 <div class="modal fade modalNote" id="noteModal{{this._id}}" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-ismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-tile">Notes for {{this.title.}}</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Notes for {{this.title}}</h4>
             </div>
             <div class="modal-body">
                 {{#if this.notes}}
                     {{#each this.notes}}
-                        <div classs="panel panel-default">
+                        <div class="panel panel-default">
                             <div class="panel-body">
                                 <p class="previousNotes"> {{this.body}}</p>
                                 <button type="button" class="btn btn-danger deleteNote" data-note-id={{this._id}} data-article-id={{this.article}}>X</button>
